@@ -1,2 +1,2 @@
-class Greeting <ApplicationRecord
+class Greeting < ApplicationRecord
 end
