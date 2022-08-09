@@ -9,6 +9,7 @@ const initialState = {
 function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "GET_GREETINGS_SUCCESS":
+      console.log(action.payload.greetings)
       return {
         ...state,
         greetings: action.payload.greetings,
