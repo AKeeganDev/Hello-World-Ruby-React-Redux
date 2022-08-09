@@ -20,11 +20,3 @@ jobs:
           [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.rubocop.yml
       - name: Rubocop Report
         run: rubocop --color
-  stylelint:
-    name: Stylelint
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
